@@ -1,0 +1,264 @@
+[33mcommit 087d1aa299a015222fe9097b82c2890a04ef2010[m[33m ([m[1;36mHEAD -> [m[1;32mdevelop[m[33m, [m[1;31morigin/develop[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: khaleed <51259459+khaleedahmmed@users.noreply.github.com>
+Date:   Tue Jun 15 16:53:16 2021 +0200
+
+    Order receipt (#61)
+
+[33mcommit 4c65ce34a7f0091cd7aaaf2a20eb802742b69f23[m
+Author: khaleed <51259459+khaleedahmmed@users.noreply.github.com>
+Date:   Mon Jun 14 17:44:09 2021 +0200
+
+    Append product to recipt (#60)
+
+[33mcommit 80f21f39a484d3ad77662288e8e8761ac0cb130b[m
+Author: Hossam Tarek <hossamtarek250@gmail.com>
+Date:   Mon Jun 14 16:44:59 2021 +0200
+
+    Add products to cart (#59)
+
+[33mcommit 8656a738da50688e8ab8c2de6fdbb127108ec5c5[m
+Author: Hossam Tarek <hossamtarek250@gmail.com>
+Date:   Mon Jun 14 15:53:09 2021 +0200
+
+    Fix modal disappear issue (#58)
+
+[33mcommit 9cb8967da37e2bd15d661069037d09fd87bd2142[m
+Author: Hossam Tarek <hossamtarek250@gmail.com>
+Date:   Mon Jun 14 14:22:50 2021 +0200
+
+    Fix order page when database is empty (#57)
+
+[33mcommit 244f4a38f51ae83ac23ff15971e0e3f90a02ee07[m
+Author: Hossam Tarek <hossamtarek250@gmail.com>
+Date:   Mon Jun 14 14:20:15 2021 +0200
+
+    Add database seeder (#56)
+
+[33mcommit 7200a57d4f9c6521bf1ac92ea539557c2dd3195d[m
+Author: essam-mamdouh <84840980+essam-mamdouh@users.noreply.github.com>
+Date:   Mon Jun 14 14:09:33 2021 +0200
+
+    order design  (#55)
+
+[33mcommit 44936b3679da4e7fcaa90a4e2a8fab81f0bd066a[m
+Author: khaleed <51259459+khaleedahmmed@users.noreply.github.com>
+Date:   Mon Jun 14 13:13:54 2021 +0200
+
+    Spatie done (#54)
+
+[33mcommit 8c96e9762626774ac6a2537aee16e391c3ca7e45[m
+Author: Hossam Tarek <hossamtarek250@gmail.com>
+Date:   Mon Jun 14 12:49:33 2021 +0200
+
+    Fix order page when database is empty (#53)
+
+[33mcommit a2284bfea69ec0ad981dcd76367628f05c844cb2[m
+Author: essam-mamdouh <84840980+essam-mamdouh@users.noreply.github.com>
+Date:   Mon Jun 14 10:53:31 2021 +0200
+
+    Order page design edits (#47)
+    
+    Co-authored-by: Essam Mamdouh <essammmamdouh54@gmail.com>
+
+[33mcommit 4fbfb11b940f68d9b513aa3e42294b444abfe468[m
+Author: khaleed <51259459+khaleedahmmed@users.noreply.github.com>
+Date:   Mon Jun 14 09:49:40 2021 +0200
+
+    settings peremetion done (#52)
+
+[33mcommit 39c90748328906ce45d01ce1c9a2e8bc462b858d[m
+Author: Hossam Tarek <hossamtarek250@gmail.com>
+Date:   Sun Jun 13 23:02:34 2021 +0200
+
+    Add Permissions crud (#50)
+
+[33mcommit fca5b7c4dac9596d851d3fbaf34cfc6b368762ab[m
+Author: Hossam Tarek <hossamtarek250@gmail.com>
+Date:   Sun Jun 13 23:01:28 2021 +0200
+
+    Add roles crud (#49)
+
+[33mcommit 6ebce14ad48ae6ab6cc201d86687d9a7dae5fefa[m
+Author: Hossam Tarek <hossamtarek250@gmail.com>
+Date:   Sun Jun 13 22:58:15 2021 +0200
+
+    Add users crud (#48)
+
+[33mcommit 98878cb6b0ee2cec33861d7c081afe035cac2f79[m
+Author: Hossam Tarek <hossamtarek250@gmail.com>
+Date:   Sun Jun 13 14:36:39 2021 +0200
+
+    Add orders pages (#45)
+
+[33mcommit e9717c0b06acff7693d6045ca5d08a3b5fccbcc9[m
+Author: khaleed <51259459+khaleedahmmed@users.noreply.github.com>
+Date:   Sun Jun 13 12:12:48 2021 +0200
+
+    Edit customer page with addresses (#44)
+
+[33mcommit 45fd47cdadbeae8f420f1aab80d79e4338cc321a[m
+Author: essam-mamdouh <84840980+essam-mamdouh@users.noreply.github.com>
+Date:   Sun Jun 13 10:23:25 2021 +0200
+
+    Add order desgine (#43)
+
+[33mcommit e0bfd6ba2c21efa64a7948d6414ace44d2306097[m
+Author: Hossam Tarek <hossamtarek250@gmail.com>
+Date:   Sun Jun 13 10:06:16 2021 +0200
+
+    Add home page (#42)
+
+[33mcommit 2a9ad13d23ebf21ba2d9d38cb9c1464f36a10eec[m
+Author: essam-mamdouh <84840980+essam-mamdouh@users.noreply.github.com>
+Date:   Thu Jun 10 16:43:13 2021 +0200
+
+    Add product without edit crud (#41)
+    
+    Co-authored-by: Essam Mamdouh <essammmamdouh54@gmail.com>
+
+[33mcommit fa8e5b33c4a71603d8e136393bd6590fd29c78e7[m
+Author: essam-mamdouh <84840980+essam-mamdouh@users.noreply.github.com>
+Date:   Thu Jun 10 10:17:10 2021 +0200
+
+    Add new product crud without array (#40)
+
+[33mcommit 721fb7a29ccb326c546f85fdd622c3f069ba29d7[m
+Author: Hossam Tarek <hossamtarek250@gmail.com>
+Date:   Wed Jun 9 17:09:40 2021 +0200
+
+    Edit navbar and footer (#39)
+
+[33mcommit cc03a24faf3bc9683b731e18816e2de60437f0cf[m
+Author: khaleed <51259459+khaleedahmmed@users.noreply.github.com>
+Date:   Wed Jun 9 16:08:29 2021 +0200
+
+    Setting page (#38)
+
+[33mcommit 8c7e90f0f8d4e8e2dc09c8137607b9c4df089573[m
+Author: Hossam Tarek <hossamtarek250@gmail.com>
+Date:   Wed Jun 9 13:34:24 2021 +0200
+
+    Fix route namespace in web.php (#37)
+
+[33mcommit e6ae37f707a32e4dc4d81f7fba0452d538c6efb4[m
+Author: Hossam Tarek <hossamtarek250@gmail.com>
+Date:   Wed Jun 9 12:54:32 2021 +0200
+
+    Add complain crud (#36)
+
+[33mcommit c3330551792ddabf6e8423afa1508b818b2df985[m
+Author: Hossam Tarek <hossamtarek250@gmail.com>
+Date:   Wed Jun 9 12:07:41 2021 +0200
+
+    Fix flash message (#35)
+
+[33mcommit 30277600856869953468081f7acc1d95381c5e13[m
+Author: Hossam Tarek <hossamtarek250@gmail.com>
+Date:   Wed Jun 9 10:11:45 2021 +0200
+
+    Add complain type crud (#34)
+
+[33mcommit f60bc1204514ff393068dadca41fe1b3d11c215d[m
+Author: Hossam Tarek <hossamtarek250@gmail.com>
+Date:   Tue Jun 8 16:52:30 2021 +0200
+
+    Fix promocode model name (#33)
+
+[33mcommit 62246d58d0b8b4f68c9f4881cdb63aabfdd01029[m
+Author: Hossam Tarek <hossamtarek250@gmail.com>
+Date:   Tue Jun 8 16:38:23 2021 +0200
+
+    Add city and area select (#32)
+
+[33mcommit 9d9e10837085e293d6846b8c32c729b90b327527[m
+Author: essam-mamdouh <84840980+essam-mamdouh@users.noreply.github.com>
+Date:   Tue Jun 8 15:39:58 2021 +0200
+
+    Add modifier crud (#31)
+
+[33mcommit 437db0c92997594444e5a1fe9549e21b18af2dbc[m
+Author: Hossam Tarek <hossamtarek250@gmail.com>
+Date:   Tue Jun 8 14:28:47 2021 +0200
+
+    Edit inquires crud (#30)
+
+[33mcommit 12bbde7bd10243f541347dd1004313de373b5c5b[m
+Author: essam-mamdouh <84840980+essam-mamdouh@users.noreply.github.com>
+Date:   Tue Jun 8 14:27:59 2021 +0200
+
+    Add variaitions crud (#29)
+
+[33mcommit 0894de2cbe15779e95c8bb366c00650844193643[m
+Author: essam-mamdouh <84840980+essam-mamdouh@users.noreply.github.com>
+Date:   Tue Jun 8 14:04:12 2021 +0200
+
+    Add Type crud (#28)
+
+[33mcommit 65b11c429d9da2094ace1c1addcc9e6b416cb5bf[m
+Author: Hossam Tarek <hossamtarek250@gmail.com>
+Date:   Tue Jun 8 13:19:33 2021 +0200
+
+    Add modifier product table (#27)
+
+[33mcommit a1fdd4bf14024208b3ff7eeff295bcf25a97f04a[m
+Author: Hossam Tarek <hossamtarek250@gmail.com>
+Date:   Tue Jun 8 12:21:23 2021 +0200
+
+    Fix sidebar (#26)
+
+[33mcommit f4128c250f454c465da00dfe248209cdc8a09a84[m
+Author: khaleed <51259459+khaleedahmmed@users.noreply.github.com>
+Date:   Tue Jun 8 12:18:34 2021 +0200
+
+    Edit page for customer (#25)
+
+[33mcommit bf5d60ff7e9417cfa56f8253d2bf15939fd7b8a6[m
+Author: essam-mamdouh <84840980+essam-mamdouh@users.noreply.github.com>
+Date:   Tue Jun 8 12:17:18 2021 +0200
+
+    Add product crud (#24)
+
+[33mcommit e6a35be4adb3ceb51b09f89fda11b334ad524484[m
+Author: Hossam Tarek <hossamtarek250@gmail.com>
+Date:   Tue Jun 8 11:58:38 2021 +0200
+
+    Add inqurie crud (#23)
+
+[33mcommit 03761758b74d874ffc41243e8a9d771f1e5aecf3[m
+Author: khaleed <51259459+khaleedahmmed@users.noreply.github.com>
+Date:   Tue Jun 8 11:41:17 2021 +0200
+
+    Add promocode crud (#22)
+    
+    * update index table
+    
+    * promocode done with index update
+    
+    * Promocode Done
+
+[33mcommit 28e3a805561ae3fc3ba1394b7b23952a368f1cba[m
+Author: Hossam Tarek <hossamtarek250@gmail.com>
+Date:   Tue Jun 8 11:20:12 2021 +0200
+
+    Customer crud (#21)
+
+[33mcommit 98834d23a565647f4c3797d74d652a15c5c72c18[m
+Author: Hossam Tarek <hossamtarek250@gmail.com>
+Date:   Mon Jun 7 16:21:39 2021 +0200
+
+    Add branches crud (#19)
+
+[33mcommit 37e02aa233f26e25c43763981c54dacb145b679c[m
+Author: essam-mamdouh <84840980+essam-mamdouh@users.noreply.github.com>
+Date:   Mon Jun 7 16:18:08 2021 +0200
+
+    Add category crud (#20)
+
+[33mcommit 195154192c99c8de9662888fc0ca71894a8a1435[m
+Author: khaleed <51259459+khaleedahmmed@users.noreply.github.com>
+Date:   Mon Jun 7 14:34:08 2021 +0200
+
+    Livewire destroy (#18)
+
+[33mcommit 0c31459a3c1056c32eed8b2929946963ce2f4cb1[m
+Author:

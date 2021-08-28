@@ -1,0 +1,82 @@
+@extends('admin.layouts.master')
+
+@section('title')
+{{ __('admin.about') }}
+@endsection
+
+@section('styles')
+    <link href="{{ asset('admin-assets/plugins/table/datatable/datatables.css') }}" rel="stylesheet" type="text/css">
+    <link href="{{ asset('admin-assets/plugins/table/datatable/dt-global_style.css') }}" rel="stylesheet" type="text/css" />
+    <script src="{{ asset('admin-assets/plugins/sweetalerts/promise-polyfill.js') }}"></script>
+    <link href="{{ asset('admin-assets/plugins/sweetalerts/sweetalert2.min.css') }}" rel="stylesheet" type="text/css" />
+    <link href="{{ asset('admin-assets/plugins/sweetalerts/sweetalert.css') }}" rel="stylesheet" type="text/css" />
+    <link href="{{ asset('admin-assets/css/components/custom-sweetalert.css') }}" rel="stylesheet" type="text/css" />
+
+    @livewireStyles
+@endsection
+
+@section('content')
+<div class="layout-px-spacing">
+
+    <div class="row layout-top-spacing">
+
+        <div class="col-xl-12 col-lg-12 col-sm-12  layout-spacing">
+            <div class="widget-content widget-content-area br-6">
+                <a href="{{ route('abouts.create') }}" style="float:right" class="btn btn-primary">{{ __('admin.add') }} {{ __('admin.about') }}</a>
+                <div class="table-responsive mb-4 mt-4">
+                    <div>
+            
+                        <table class="table table-hover" style="width:100%" id="areas-table">
+                            <thead>
+                            <tr>
+                                <th> {{ __('admin.small-title') }} </th>
+                                <th> {{ __('admin.title') }} </th>
+                                <th> {{ __('admin.body') }} </th>
+                                <th> {{ __('admin.image') }} </th>
+                                <th> {{ __('admin.options') }} </th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            @foreach ($items as $item)
+                                <tr>
+                                    <td>{{ $item->small_title }}</td>
+                                    <td>{{ $item->title }}</td>
+                                    <td>{!! $item->body !!}</td>
+                                    <td> <img width="100px"  src=" {{ isset($item->img) ? url("/images/about/".$item->img) : null }}"></td>
+                                    <td>
+
+                                        <a href="{{ route('abouts.edit', $item) }}"
+                                           class="d-inline-block" data-toggle="tooltip" data-placement="top" title="Edit"><i class="fa fa-edit table-edit"></i></a>
+
+                                        <button onclick="softDelete({{ $item->id }})" name="delete" class=" table-cancel d-inline-block no-style" data-toggle="tooltip" data-placement="top" title="Delete"><i class="fa fa-trash"></i></button>
+
+                                    </td>
+                                </tr>
+                            @endforeach
+                            </tbody>
+                        </table>
+
+                        <span>{{ $items->links('pagination::bootstrap-4') }}</span>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+@endsection
+
+
+
+@section('scripts')
+<script src="{{ asset('admin-assets/plugins/sweetalerts/sweetalert2.min.js') }}"></script>
+<script src="{{ asset('admin-assets/plugins/sweetalerts/custom-sweetalert.js') }}"></script>
+
+
+
+@livewireScripts
+@endsection
+
+
