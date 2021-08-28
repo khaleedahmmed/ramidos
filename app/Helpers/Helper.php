@@ -10,7 +10,7 @@ function getSiteName()
 
 function getLogo()
 {
-    return 'images/' . Setting::first()->logo;
+    return 'images/settings/' . Setting::first()->logo;
 }
 
 function getAddress()

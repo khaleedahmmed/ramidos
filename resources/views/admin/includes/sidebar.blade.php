@@ -233,7 +233,7 @@
                         <div class="">
                             <i class="fas fa-check-double" width="24" height="24" ></i>
 
-                            <span>{{__('admin.sections')}}</span>
+                            <span>{{__('admin.homePageSections')}}</span>
                         </div>
                         <div>
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
@@ -245,11 +245,15 @@
                     </a>
                     <ul class="collapse submenu list-unstyled" id="sections" data-parent="#accordionExample">
                         <li>
-                            <a href="{{ url('/admin/sections') }}"> {{__('admin.display')}} {{__('admin.sections')}} </a>
+                            <a href="{{ url('/admin/sectionOne') }}"> {{__('admin.display')}} {{__('admin.sectionOne')}} </a>
                         </li>
                         <li>
-                            <a href="{{ url('/admin/sections/create') }}"> {{__('admin.add')}} {{__('admin.sections')}}  </a>
+                            <a href="{{ url('/admin/sectionTwo') }}"> {{__('admin.display')}} {{__('admin.sectionTwo')}} </a>
                         </li>
+                        <li>
+                            <a href="{{ url('/admin/sectionThree') }}"> {{__('admin.display')}} {{__('admin.sectionThree')}} </a>
+                        </li>
+                        
                     </ul>
                 </li>
                 {{-- @endcan --}}
@@ -329,6 +333,15 @@
                             <a href="{{ url('/admin/terms/create') }}"> {{__('admin.add')}} {{__('admin.terms')}}  </a>
                         </li>
                     </ul>
+                </li>
+
+                <li class="menu">
+                    <a href="{{ route('settings.index') }}" aria-expanded="false" class="dropdown-toggle">
+                        <div class="">
+                            <i class="far fa-chart-bar"></i>
+                            <span> {{ __('admin.settings') }}</span>
+                        </div>
+                    </a>
                 </li>
 
 

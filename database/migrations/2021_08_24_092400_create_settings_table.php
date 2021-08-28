@@ -17,7 +17,7 @@ class CreateSettingsTable extends Migration
             $table->id();
             $table->string('logo');
             $table->string('address');
-            $table->string('map');
+            $table->text('map');
             $table->string('email');
             $table->string('phone');
             $table->string('landline');

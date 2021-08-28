@@ -36,7 +36,7 @@
 					</div>
 				</div>
 				<div class="col-md-12 col-xl-6">
-					<p class="content-border-left mrt-30">{{ $sections[0]->body }}</p>
+					<p class="content-border-left mrt-30">{!! $sections[0]->body !!}</p>
 				</div>
 			</div>
 		</div>
@@ -60,7 +60,7 @@
 					<div class="col"></div>
 					<div class="col-lg-6">
 						<div class="section-title-right-part">
-							<p class="text-white">{{ $sections[1]->body }}</p>
+							<p class="text-white">{!! $sections[1]->body !!}</p>
 						</div>
 					</div>
 				</div>
@@ -85,7 +85,7 @@
 									<h3 class="mrb-15">{{ $service->title }}</h3>
 								</div>
 								<div class="service-item-para">
-									<p>{{ Str::limit($service->body , 65) }} </p>
+									<p>{!! Str::limit($service->body , 65) !!} </p>
 								</div>
 								<div class="service-item-link">
 									<a class="text-uppercase text-primary-color" href="{{ url('services/'.$service->id) }}">Read More</a>
@@ -152,14 +152,29 @@
 				<div class="row justify-content-start">
 					<div class="col-md-12 col-lg-6 col-xl-6">
 						<div class="about-image-block-3">
-							<img class="left-infinite-img img-full" src="{{ url('/images/about/'.$sections[2]->img) }}" alt="">
+							<img class="left-infinite-img img-full" src="{{ url('/images/sections/'.$sections[2]->img) }}" alt="">
 						</div>
 					</div>
 					<div class="col-md-12 col-lg-6 col-xl-4 p-md-5 pd-sm-25">
 						<h5 class="mrb-15 text-white side-line-left">{{ $sections[2]->small_title }}</h5>
 						<h2 class="text-white mrb-30">{{ $sections[2]->title }}</h2>
-						<p class="text-white mrb-60">{{ $sections[2]->body }}</p>
+						<p class="text-white mrb-60">{!! $sections[2]->body !!}</p>
 
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="section-content">
+			<div class="container border-top pdt-80">
+				<div class="row">
+					<div class="col-lg-12">
+						<div class="owl-carousel client-items">
+							@foreach ($clients as $client )
+							<div class="client-item">
+								<img src="{{ url('/images/clients/'.$client->img) }}" alt="">
+							</div>
+							@endforeach
+						</div>
 					</div>
 				</div>
 			</div>
@@ -168,21 +183,7 @@
 	<!-- Divider Section End -->
 		<!-- Clients Section Start -->
         <section class="pdb-90">
-            <div class="section-content">
-                <div class="container border-top pdt-80">
-                    <div class="row">
-                        <div class="col-lg-12">
-                            <div class="owl-carousel client-items">
-								@foreach ($clients as $client )
-                                <div class="client-item">
-                                    <img src="{{ url('/images/clients/'.$client->img) }}" alt="">
-                                </div>
-								@endforeach
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            
         </section>
         <!-- Clients Section End -->
 @endsection

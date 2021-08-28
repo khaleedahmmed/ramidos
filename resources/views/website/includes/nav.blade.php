@@ -4,11 +4,11 @@
 			<div class="header-top-area bg-primary-color d-none d-lg-block">
 				<div class="container">
 					<div class="row">
-						<div class="col-lg-6 header-top-left-part">
+						<div class="col-lg-8 header-top-left-part">
 							<span class="address"><i class="webexflaticon flaticon-placeholder-1"></i> {{ getAddress() }}</span>
 							<span class="phone"><i class="webexflaticon flaticon-send"></i> {{ getEmail() }}</span>
 						</div>
-						<div class="col-lg-6 header-top-right-part text-right">
+						<div class="col-lg-4 header-top-right-part text-right">
 							<ul class="social-links">
 								<li><a href="{{ url(getFacebook()) }}"><i class="fab fa-facebook-f"></i></a></li>
 								<li><a href="{{ url(getTwitter()) }}"><i class="fab fa-twitter"></i></a></li>

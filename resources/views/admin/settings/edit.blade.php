@@ -1,15 +1,15 @@
 @extends('admin.layouts.master')
 
-@section('styles')
-<link rel="stylesheet" type="text/css" href="{{ asset('admin-assets/css/forms/switches.css') }}">
-<link href="{{ asset('admin-assets/plugins/file-upload/file-upload-with-preview.min.css') }}" rel="stylesheet" type="text/css" />
-@endsection
-
 @section('title')
 {{__('admin.edit')}} {{__('admin.settings')}}
 
 @endsection
+@section('styles')
+<link href="{{ asset('admin-assets/assets/css/scrollspyNav.css') }}" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" type="text/css" href="{{ asset('admin-assets/plugins/select2/select2.min.css') }}">
+<link href="{{ asset('admin-assets/plugins/file-upload/file-upload-with-preview.min.css')}}" rel="stylesheet" type="text/css" />
 
+@endsection
 @section('content')
 
 
@@ -42,40 +42,34 @@
       </div>
 @endsection
 @section('scripts')
-<script>
-  
-  
-  function showTax() {
-      if ($("#tax_switch").is(":checked")) {
-         $('#tax').removeClass('d-none');
-         $('#tax').addClass('d-block');
-         
-      }
-      else{
-         $('#tax').removeClass('d-block');
-         $('#tax').css('display', 'none');
-   }
-  }
+<script src="{{asset('admin-assets/ckeditor/ckeditor.js') }}"></script>
 
-  function showPoint() {
-      if ($("#point").is(":checked")) {
-         $('#point_value').removeClass('d-none');
-         $('#point_value').addClass('d-block');
-         
-      }
-      else{
-         $('#point_value').removeClass('d-block');
-         $('#point_value').css('display', 'none');
-   }
-  }
-</script>
-
+   <script>
+         CKEDITOR.replace( 'body' );
+   </script>
+<script src="{{ asset('admin-assets/assets/js/scrollspyNav.js') }}"></script>
+<script src="{{ asset('admin-assets/plugins/select2/select2.min.js') }}"></script>
+<script src="{{ asset('admin-assets/plugins/select2/custom-select2.js') }}"></script>
 <script src="{{ asset('admin-assets/plugins/file-upload/file-upload-with-preview.min.js')}}"></script>
 
 <script>
-    //First upload
-    var firstUpload = new FileUploadWithPreview('myFirstImage')
-    //Second upload
-    var secondUpload = new FileUploadWithPreview('mySecondImage')
+   //First upload
+   var firstUpload = new FileUploadWithPreview('myFirstImage')
+   //Second upload
+   var secondUpload = new FileUploadWithPreview('mySecondImage')
+</script>
+<!-- END PAGE LEVEL PLUGINS -->
+<script>
+function showSizes(key) {
+   if ($("#size"+key).is(":checked")) {
+      $('#price'+key).removeClass('d-none');
+      $('#price'+key).addClass('d-block');
+
+   }
+   else{
+      $('#price'+key).removeClass('d-block');
+      $('#price'+key).css('display', 'none');
+}
+}
 </script>
 @endsection

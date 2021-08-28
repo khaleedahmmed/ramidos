@@ -8,7 +8,7 @@
                 </a>
             </li>
             <li class="nav-item theme-text">
-                <a href="{{ url('/') }}" class="nav-link">Na2sa</a>
+                <a href="{{ url('/') }}" class="nav-link">Ramido's group</a>
             </li>
         </ul>
 
