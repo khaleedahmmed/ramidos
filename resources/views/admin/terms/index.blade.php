@@ -39,12 +39,19 @@
                                 <tr>
                                     <td>{{ $item->title }}</td>
                                     <td>
-
-                                        <a href="{{ route('terms.edit', $item) }}"
-                                           class="d-inline-block" data-toggle="tooltip" data-placement="top" title="Edit"><i class="fa fa-edit table-edit"></i></a>
-
-                                        <button onclick="softDelete({{ $item->id }})" name="delete" class=" table-cancel d-inline-block no-style" data-toggle="tooltip" data-placement="top" title="Delete"><i class="fa fa-trash"></i></button>
-
+                                        <div class="row">
+                                            <div class="col-lg-1">
+                                             <a href="{{ route('terms.edit', $item) }}"
+                                             class="d-inline-block" data-toggle="tooltip" data-placement="top" title="Edit"><i class="fa fa-edit table-edit"></i></a>
+                                            </div>
+                                            <div class="col-lg-1">
+                                             <form action="{{route('terms.destroy',$item)}}" method="post">
+                                                 @csrf
+                                                 @method("delete")
+                                                 <button type="submit" name="delete" onclick="return confirm('Are You Sure ?');" class="table-cancel d-inline-block no-style"><i class="fa fa-trash"></i></button>
+                                             </form>
+                                            </div>
+                                        </div>
                                     </td>
                                 </tr>
                             @endforeach

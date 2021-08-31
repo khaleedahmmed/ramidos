@@ -44,12 +44,21 @@
                                     <td>{!! $item->body !!}</td>
                                     <td> <img width="100px"  src=" {{ isset($item->img) ? url("/images/about/".$item->img) : null }}"></td>
                                     <td>
-
-                                        <a href="{{ route('abouts.edit', $item) }}"
-                                           class="d-inline-block" data-toggle="tooltip" data-placement="top" title="Edit"><i class="fa fa-edit table-edit"></i></a>
-
-                                        <button onclick="softDelete({{ $item->id }})" name="delete" class=" table-cancel d-inline-block no-style" data-toggle="tooltip" data-placement="top" title="Delete"><i class="fa fa-trash"></i></button>
-
+                                       <div class="row">
+                                           <div class="col-lg-1">
+                                            <a href="{{ route('abouts.edit', $item) }}"
+                                            class="d-inline-block" data-toggle="tooltip" data-placement="top" title="Edit"><i class="fa fa-edit table-edit"></i></a>
+                                           </div>
+                                           <div class="col-lg-1">
+                                            <form action="{{route('abouts.destroy',$item)}}" method="post">
+                                                @csrf
+                                                @method("delete")
+                                                <button type="submit" name="delete" onclick="return confirm('Are You Sure ?');" class="table-cancel d-inline-block no-style"><i class="fa fa-trash"></i></button>
+                                            </form>
+                                           </div>
+                                       </div>
+                                        {{-- <button onclick="softDelete({{ $item->id }})" name="delete" class=" table-cancel d-inline-block no-style" data-toggle="tooltip" data-placement="top" title="Delete"><i class="fa fa-trash"></i></button> --}}
+                                        
                                     </td>
                                 </tr>
                             @endforeach

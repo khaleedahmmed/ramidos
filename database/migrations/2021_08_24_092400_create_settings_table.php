@@ -25,6 +25,7 @@ class CreateSettingsTable extends Migration
             $table->string('facebook');
             $table->string('twitter');
             $table->string('instagram');
+            $table->string('brochure');
             $table->timestamps();
         });
     }

@@ -48,8 +48,16 @@
                 <div class="col-xl-4 col-lg-6 col-md-12">
                     <div class="widget footer-widget">
                         <p class="text-light-gray">Subscribe Now</p>
-                        <input type="text" class="form-control" placeholder="Enter Your Email">
-                        <a href="" class="cs-btn-one btn-primary-color btn-sm has-icon mrt-20"><i class="webexflaticon flaticon-send"></i>Submit Now</a>
+                        <form action="{{ route('subscribe') }}" method="POST" enctype="multipart/form-data">
+                            @csrf
+                        <input name="email" type="text" class="form-control" placeholder="Enter Your Email">
+                        @error('email')
+                        <div class="alert alert-primary m-4" role="alert">
+                            <strong>Ops! You already subscibed</strong> {{ session()->get('error') }}.</button>
+                            </div>
+                        @enderror
+                        <button type="submit" class="cs-btn-one btn-primary-color btn-sm has-icon mrt-20"><i class="webexflaticon flaticon-send"></i>Submit Now</button>
+                        </form>
                     </div>
                 </div>
             </div>

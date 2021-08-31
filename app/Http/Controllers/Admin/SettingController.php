@@ -31,6 +31,7 @@ use App\Traits\ControllerTrait;
                 "facebook"     => 'required|min:3|max:191',
                 "twitter"     => 'required|min:3|max:191',
                 "instagram"     => 'required|min:3|max:191',
+                "brochure"     => 'mimes:doc,pdf,docx,zip,|max:10000',
                ]);
 
               
@@ -40,6 +41,11 @@ use App\Traits\ControllerTrait;
              if ($request->logo) {
                 $this->deleteImage($item->logo,'images/settings/');
                 $data['logo'] = $this->uploadImage($request->file('logo'),'images/settings');
+            }
+
+             if ($request->brochure) {
+                $this->deleteImage($item->brochure,'brochure/');
+                $data['brochure'] = $this->uploadImage($request->file('brochure'),'brochure');
             }
 
             $item->update($data);

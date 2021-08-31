@@ -56,6 +56,13 @@ class SliderController extends Controller
             }
 
         $slider->update($data);
-        return redirect(route('sliders.index'))->withFlashMessage('updated');
+        return redirect(route('sliders.index'))->with('success', 'Slider updated successfully');
+
+    }
+
+    public function destroy(Slider $slider)
+    { 
+      $slider->delete();
+      return redirect(route('sliders.index'))->with('success', 'Slider deleted successfully');
     }
 }

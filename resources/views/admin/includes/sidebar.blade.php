@@ -125,7 +125,7 @@
             <li class="menu">
                 <a href="#abouts" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
                     <div class="">
-                        <i class="fas fa-check-double" width="24" height="24" ></i>
+                        <i class="fas fa-address-card" width="24" height="24" ></i>
 
                         <span>{{__('admin.about')}}</span>
                     </div>
@@ -152,7 +152,7 @@
             <li class="menu">
                 <a href="#clients" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
                     <div class="">
-                        <i class="fas fa-check-double" width="24" height="24" ></i>
+                        <i class="fas fa-user-circle" width="24" height="24" ></i>
 
                         <span>{{__('admin.clients')}}</span>
                     </div>
@@ -179,7 +179,7 @@
             <li class="menu">
                 <a href="#requests" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
                     <div class="">
-                        <i class="fas fa-check-double" width="24" height="24" ></i>
+                        <i class="fas fa-sort-amount-up-alt" width="24" height="24" ></i>
 
                         <span>{{__('admin.requests')}}</span>
                     </div>
@@ -203,7 +203,7 @@
             <li class="menu">
                 <a href="#countries" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
                     <div class="">
-                        <i class="fas fa-check-double" width="24" height="24" ></i>
+                        <i class="fas fa-globe-europe" width="24" height="24" ></i>
 
                         <span>{{__('admin.countries')}}</span>
                     </div>
@@ -231,7 +231,7 @@
                 <li class="menu">
                     <a href="#sections" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
                         <div class="">
-                            <i class="fas fa-check-double" width="24" height="24" ></i>
+                            <i class="fas fa-solar-panel" width="24" height="24" ></i>
 
                             <span>{{__('admin.homePageSections')}}</span>
                         </div>
@@ -262,7 +262,7 @@
                 <li class="menu">
                     <a href="#services" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
                         <div class="">
-                            <i class="fas fa-check-double" width="24" height="24" ></i>
+                            <i class="fas fa-tasks-alt" width="24" height="24" ></i>
 
                             <span>{{__('admin.services')}}</span>
                         </div>
@@ -288,7 +288,7 @@
                 <li class="menu">
                     <a href="#sliders" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
                         <div class="">
-                            <i class="fas fa-check-double" width="24" height="24" ></i>
+                            <i class="fas fa-images" width="24" height="24" ></i>
 
                             <span>{{__('admin.sliders')}}</span>
                         </div>
@@ -334,11 +334,31 @@
                         </li>
                     </ul>
                 </li>
-
+                <li class="menu">
+                    <a href="#contacts" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+                        <div class="">
+                            <i class="fas fa-comment-alt-dots" width="24" height="24" ></i>
+    
+                            <span>{{__('admin.contacts')}}</span>
+                        </div>
+                        <div>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                 stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                 class="feather feather-chevron-right">
+                                <polyline points="9 18 15 12 9 6"></polyline>
+                            </svg>
+                        </div>
+                    </a>
+                    <ul class="collapse submenu list-unstyled" id="contacts" data-parent="#accordionExample">
+                        <li>
+                            <a href="{{ url('/admin/contacts') }}"> {{__('admin.display')}} {{__('admin.contacts')}} </a>
+                        </li>
+                    </ul>
+                </li>
                 <li class="menu">
                     <a href="{{ route('settings.index') }}" aria-expanded="false" class="dropdown-toggle">
                         <div class="">
-                            <i class="far fa-chart-bar"></i>
+                            <i class="far fa-cogs"></i>
                             <span> {{ __('admin.settings') }}</span>
                         </div>
                     </a>

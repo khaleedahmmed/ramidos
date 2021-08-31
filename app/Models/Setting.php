@@ -19,6 +19,7 @@ class Setting extends Model
     "fax"     ,
     "facebook",
     "twitter" ,
-    "instagram"
+    "instagram",
+    "brochure"
     ];
 }

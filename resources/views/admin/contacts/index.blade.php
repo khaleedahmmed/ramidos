@@ -45,11 +45,10 @@
                                     <td>{{ $item->message }}</td>
                                     <td>
 
-                                        <a href="{{ route('admins.edit', $item) }}"
-                                           class="d-inline-block" data-toggle="tooltip" data-placement="top" title="Edit"><i class="fa fa-edit table-edit"></i></a>
-
                                         <button onclick="softDelete({{ $item->id }})" name="delete" class=" table-cancel d-inline-block no-style" data-toggle="tooltip" data-placement="top" title="Delete"><i class="fa fa-trash"></i></button>
-
+                                        <a href="{{ url('admin/contacts/'.$item->id.'/delete') }}"
+                                            onclick="return confirm('Are You Sure ?');"
+                                            class="btn btn-danger btn-circle"><i class="fa fa-trash"></i></a>
                                     </td>
                                 </tr>
                             @endforeach

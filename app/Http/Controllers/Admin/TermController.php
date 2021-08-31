@@ -45,7 +45,14 @@ class TermController extends Controller
             ]);
 
         $term->update($data);
-        return redirect(route('terms.index'))->withFlashMessage('updated');
+        return redirect(route('terms.index'))->with('success', 'Term updated successfully');
+
+    }
+
+    public function destroy(Term $term)
+    { 
+      $term->delete();
+      return redirect(route('terms.index'))->with('success', 'Term deleted successfully');
     }
 
 }

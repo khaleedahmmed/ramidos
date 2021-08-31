@@ -10,6 +10,25 @@
 						</div>
 						<div class="col-lg-4 header-top-right-part text-right">
 							<ul class="social-links">
+
+					@if (Route::has('login'))
+                    @auth
+					<li><a href="{{ route('logout') }}"
+						onclick="event.preventDefault();
+					    document.getElementById('logout-form').submit();">
+						 {{ __('Logout') }}
+					     </a></li>
+					 <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+						@csrf
+					</form>
+                    @else
+					<li><a href="{{ route('login') }}">Log in</a></li>
+
+                        @if (Route::has('register'))
+						<li><a href="{{ route('register') }}" >Register</a></li>
+                        @endif
+                    @endauth
+                 @endif
 								<li><a href="{{ url(getFacebook()) }}"><i class="fab fa-facebook-f"></i></a></li>
 								<li><a href="{{ url(getTwitter()) }}"><i class="fab fa-twitter"></i></a></li>
 								<li><a href="{{ url(getInstagram()) }}"><i class="fab fa-instagram"></i></a></li>

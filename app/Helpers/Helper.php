@@ -53,6 +53,16 @@ function getLandline()
     return Setting::first()->landline;
 }
 
+function getMap()
+{
+    return Setting::first()->map;
+}
+
+function getBrochure()
+{
+    return 'brochure/' . Setting::first()->brochure;
+}
+
 function getServices()
 {
     return Service::get();

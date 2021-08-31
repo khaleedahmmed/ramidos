@@ -20,12 +20,12 @@ Route::get('/', function () {
     Route::resource('/abouts', AboutController::class);
     Route::resource('/clients', ClientController::class);
     Route::resource('/services', ServiceController::class);
-    Route::resource('/requests', RequestController::class);
+    Route::get('/requests', [RequestController::class, 'index']);
     Route::resource('/sliders', SliderController::class);
     Route::resource('/terms', TermController::class);
     Route::resource('/sections', SectionController::class);
     Route::resource('/countries', CountryController::class);
-    Route::resource('/contacts', ContactController::class);
+    Route::get('/contacts', [ContactController::class, 'index']);
     Route::get('settings', [SettingController::class, 'index'])->name('settings.index');
     Route::post('settings', [SettingController::class, 'update'])->name('settings.update');
     Route::get('sectionOne', [SectionController::class, 'sectionOne'])->name('sectionOne.index');

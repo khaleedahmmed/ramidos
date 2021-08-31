@@ -1,7 +1,7 @@
 @extends('admin.layouts.master')
 
 @section('title')
-{{__('admin.add')}} {{__('admin.areas')}}
+{{__('admin.add')}} {{__('admin.users')}}
 @endsection
 
 @section('content')

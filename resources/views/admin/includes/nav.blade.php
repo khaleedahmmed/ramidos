@@ -4,7 +4,7 @@
         <ul class="navbar-item theme-brand flex-row  text-center">
             <li class="nav-item theme-logo">
                 <a href="{{ url('/') }}">
-                    <img src="" class="navbar-logo" alt="logo">
+                    <img src="{{ getLogo() }}" class="navbar-logo" alt="logo">
                 </a>
             </li>
             <li class="nav-item theme-text">

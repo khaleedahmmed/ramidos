@@ -4,12 +4,15 @@ namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
+use App\Models\Request as Model;
+
 
 class RequestController extends Controller
 {
     public function index()
-    {
-        return view('admin.requests.index');
+    {  
+        $items = Model::paginate(10);
+        return view('admin.requests.index',compact('items'));
     }
 
     /**
@@ -17,8 +20,5 @@ class RequestController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function create()
-    {
-        return view('admin.requests.create');
-    }
+ 
 }

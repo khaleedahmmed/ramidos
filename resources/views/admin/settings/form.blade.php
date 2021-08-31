@@ -24,5 +24,6 @@
      <x-input type="text" name="facebook" value="{{ isset($item) ? $item->facebook : null }}">{{ __('admin.facebook') }}</x-input>
      <x-input type="text" name="twitter" value="{{ isset($item) ? $item->twitter : null }}">{{ __('admin.twitter') }}</x-input>
      <x-input type="text" name="instagram" value="{{ isset($item) ? $item->instagram : null }}">{{ __('admin.instagram') }}</x-input>
+     <x-file type="text" name="brochure" value="{{ isset($item) ? $item->brochure : null }}">{{ __('admin.brochure') }}</x-file>
 
    </div>

@@ -25,7 +25,7 @@
 						<div class="brochure-download">
 							<h4 class="mrb-40 widget-title">Brochure Download</h4>
 							<p>Please click download button for getting brochure file</p>
-							<a href="#" class="cs-btn-one"><span class="far fa-file-pdf mrr-10"></span> Download PDF</a>
+							<a href="{{ url(getBrochure()) }}" class="cs-btn-one" target="_blank"><span class="far fa-file-pdf mrr-10"></span> Download PDF</a>
 						</div>
 					</div>
 					<div class="sidebar-widget bg-primary-color" data-background="images/bg/abs-bg4.png">

@@ -42,7 +42,7 @@ class ServiceController extends Controller
         return view('admin.services.edit',compact('item'));
     }
 
-    public function update(Request $request, service $service)
+    public function update(Request $request, Service $service)
     {
 
          $data = $request->validate([
@@ -56,6 +56,12 @@ class ServiceController extends Controller
             }
 
         $service->update($data);
-        return redirect(route('services.index'))->withFlashMessage('updated');
+        return redirect(route('services.index'))->with('success', 'Service updated successfully');
+
+    }
+    public function destroy(Service $service)
+    { 
+      $service->delete();
+      return redirect(route('services.index'))->with('success', 'Service deleted successfully');
     }
 }

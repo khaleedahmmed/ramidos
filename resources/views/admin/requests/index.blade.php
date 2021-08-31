@@ -22,10 +22,10 @@
 
         <div class="col-xl-12 col-lg-12 col-sm-12  layout-spacing">
             <div class="widget-content widget-content-area br-6">
-                <a href="{{ url('abouts/create') }}" style="float:right" class="btn btn-primary">{{ __('admin.add') }} {{ __('admin.abouts') }}</a>
+                {{-- <a href="{{ url('abouts/create') }}" style="float:right" class="btn btn-primary">{{ __('admin.add') }} {{ __('admin.abouts') }}</a> --}}
                 <div class="table-responsive mb-4 mt-4">
                     <div>
-                        @include('admin.includes.table-search')
+                        {{-- @include('admin.includes.table-search') --}}
 
                         <table class="table table-hover" style="width:100%" id="areas-table">
                             <thead>
@@ -42,7 +42,7 @@
                                 <th> {{ __('admin.shipment') }} </th>
                                 <th> {{ __('admin.origin') }} </th>
                                 <th> {{ __('admin.destination') }} </th>
-                                <th> {{ __('admin.note') }} </th>
+                                <th style="width: 50%"> {{ __('admin.note') }} </th>
                                 <th> {{ __('admin.options') }} </th>
                             </tr>
                             </thead>
@@ -63,9 +63,6 @@
                                     <td>{{ $item->destination }}</td>
                                     <td>{{ $item->note }}</td>
                                     <td>
-
-                                        <a href="{{ route('admins.edit', $item) }}"
-                                           class="d-inline-block" data-toggle="tooltip" data-placement="top" title="Edit"><i class="fa fa-edit table-edit"></i></a>
 
                                         <button onclick="softDelete({{ $item->id }})" name="delete" class=" table-cancel d-inline-block no-style" data-toggle="tooltip" data-placement="top" title="Delete"><i class="fa fa-trash"></i></button>
 
